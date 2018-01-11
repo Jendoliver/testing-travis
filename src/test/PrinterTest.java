@@ -6,11 +6,12 @@ import org.junit.jupiter.api.Test;
 
 import model.Printer;
 
-class PrinterTest 
+public class PrinterTest 
 {
 	private static final String MSG = "Hello Travis!";
+	
 	@Test
-	void printTest()
+	public void printTest()
 	{
 		assertEquals(MSG, Printer.print(MSG));
 	}
