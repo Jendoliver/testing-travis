@@ -13,6 +13,6 @@ public class PrinterTest
 	@Test
 	public void printTest()
 	{
-		assertEquals(MSG, Printer.print(MSG));
+		assertEquals("Maricon", Printer.print(MSG));
 	}
 }
