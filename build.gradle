@@ -32,6 +32,9 @@ task testBranch1 {
 			exceptionFormat "full"
 		}
 	}
+	doLast {
+		println 'esta no toca hijo de puta'
+	}
 }
 
 task testBranch2 {
@@ -43,5 +46,8 @@ task testBranch2 {
 			events "passed", "skipped", "failed"
 			exceptionFormat "full"
 		}
+	}
+	doLast {
+		println 'esta toca'
 	}
 }
