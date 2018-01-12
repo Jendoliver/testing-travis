@@ -8,7 +8,7 @@ import model.Printer;
 public class PrinterTest 
 {
 	@Test
-	public void printTest()
+	public void printTest() throws Exception
 	{
 		assertEquals("Maricon", "FAIL");
 	}
