@@ -6,5 +6,5 @@ jdk:
 script:
   - if [ "$TRAVIS_BRANCH" = "master" ]; then gradle build; fi
   - if [ "$TRAVIS_BRANCH" = "develop" ]; then gradle build; fi
+  - if [ "$TRAVIS_BRANCH" = "branch2" ]; then gradle build -x testBranch1; 
   - if [ "$TRAVIS_BRANCH" = "branch1" ]; then gradle build -x testBranch2; fi
-  - if [ "$TRAVIS_BRANCH" = "branch2" ]; then gradle build -x testBranch1; fi
