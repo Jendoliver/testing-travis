@@ -6,8 +6,14 @@ import org.junit.Test;
 public class PrinterTest 
 {
 	@Test
-	public void printTest() throws Exception
+	public void failedTest() throws Exception
 	{
-		assertEquals("PASS", "PASS");
+		assertEquals("Me puedes mostrar algun mensaje hijo de puta?", "SORRYMAN", "GONNAFAIL");
+	}
+	
+	@Test
+	public void chickyTest() throws Exception
+	{
+		assertEquals("Sick", "NOICE", "NOICE");
 	}
 }
