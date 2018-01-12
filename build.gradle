@@ -22,9 +22,19 @@ sourceSets {
 	}
 }
 
-test {
+testBranch1 {
 	filter {
 		includeTestsMatching "branch1tests.*"
+	}
+	testLogging {
+		events "passed", "skipped", "failed"
+		exceptionFormat "full"
+	}
+}
+
+testBranch2 {
+	filter {
+		includeTestsMatching "branch2tests.*"
 	}
 	testLogging {
 		events "passed", "skipped", "failed"
