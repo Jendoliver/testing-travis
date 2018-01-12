@@ -24,6 +24,7 @@ sourceSets {
 
 task testBranch1 {
 	test {
+		println 'esta toca'
 		filter {
 			includeTestsMatching "branch1tests.*"
 		}
@@ -32,13 +33,11 @@ task testBranch1 {
 			exceptionFormat "full"
 		}
 	}
-	doLast {
-		println 'esta no toca hijo de puta'
-	}
 }
 
 task testBranch2 {
 	test {
+		println 'esta toca'
 		filter {
 			includeTestsMatching "branch2tests.*"
 		}
@@ -46,8 +45,5 @@ task testBranch2 {
 			events "passed", "skipped", "failed"
 			exceptionFormat "full"
 		}
-	}
-	doLast {
-		println 'esta toca'
 	}
 }
