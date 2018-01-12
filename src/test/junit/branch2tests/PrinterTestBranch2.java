@@ -1,14 +1,14 @@
-package branch1tests;
+package junit.branch2tests;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-public class PrinterTestBranch1 
+public class PrinterTestBranch2 
 {
 	@Test
 	public void failedTest() throws Exception
 	{
-		assertEquals("Me puedes mostrar algun mensaje hijo de puta?", "CONCO", "TODOGUAY");
+		assertEquals("Me puedes mostrar algun mensaje hijo de puta?", "SORRYMAN", "GONNAFAILT");
 	}
 	
 	@Test

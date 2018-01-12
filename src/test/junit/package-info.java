@@ -5,4 +5,4 @@
  * @author Jandol
  *
  */
-package branch2tests;
+package junit;

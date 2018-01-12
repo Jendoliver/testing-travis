@@ -4,7 +4,7 @@ install: true
 jdk:
   - oraclejdk8
 script:
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then gradle build; fi
-  - if [ "$TRAVIS_BRANCH" = "develop" ]; then gradle build; fi
-  - if [ "$TRAVIS_BRANCH" = "branch2" ]; then gradle build -x testBranch1; fi
-  - if [ "$TRAVIS_BRANCH" = "branch1" ]; then gradle build -x testBranch2; fi
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then gradle build -PbranchTests=junit.**; fi
+  - if [ "$TRAVIS_BRANCH" = "develop" ]; then gradle build -PbranchTests=junit.**; fi
+  - if [ "$TRAVIS_BRANCH" = "branch1" ]; then gradle build -PbranchTests=junit.branch1tests.*; fi
+  - if [ "$TRAVIS_BRANCH" = "branch2" ]; then gradle build -PbranchTests=junit.branch2tests.*; fi

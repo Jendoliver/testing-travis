@@ -1,6 +1,8 @@
 apply plugin: "java"
 sourceCompatibility = 1.8
 
+def branchTests = findProperty("branchTests")
+
 repositories {
     mavenCentral()
 }
@@ -22,28 +24,12 @@ sourceSets {
 	}
 }
 
-task testBranch1 {
-	println 'esta NO toca'
-	test {
-		filter {
-			includeTestsMatching "branch1tests.*"
-		}
-		testLogging {
-			events "passed", "skipped", "failed"
-			exceptionFormat "full"
-		}
+test {
+	filter {
+		includeTestsMatching branchTests
 	}
-}
-
-task testBranch2 {
-	println 'esta toca'
-	test {
-		filter {
-			includeTestsMatching "branch2tests.*"
-		}
-		testLogging {
-			events "passed", "skipped", "failed"
-			exceptionFormat "full"
-		}
+	testLogging {
+		events "passed", "skipped", "failed"
+		exceptionFormat "full"
 	}
 }
