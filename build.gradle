@@ -22,7 +22,7 @@ sourceSets {
 	}
 }
 
-testBranch1 {
+task testBranch1 {
 	test {
 		println 'esta NO toca'
 		filter {
@@ -35,7 +35,7 @@ testBranch1 {
 	}
 }
 
-testBranch2 {
+task testBranch2 {
 	test {
 		println 'esta toca'
 		filter {
