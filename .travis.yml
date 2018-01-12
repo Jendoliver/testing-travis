@@ -3,3 +3,8 @@ sudo: false
 install: true
 jdk:
   - oraclejdk8
+script:
+  - if [ "$TRAVIS_BRANCH" = "master"]; then gradle check; fi
+  - if [ "$TRAVIS_BRANCH" = "master"]; then gradle check; fi
+  - if [ "$TRAVIS_BRANCH" = "branch1"]; then gradle check -x testBranch2; fi
+  - if [ "$TRAVIS_BRANCH" = "branch2"]; then gradle check -x testBranch1; fi
