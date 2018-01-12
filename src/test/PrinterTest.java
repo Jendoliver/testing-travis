@@ -7,11 +7,9 @@ import model.Printer;
 
 public class PrinterTest 
 {
-	private static final String MSG = "Hello Travis!";
-	
 	@Test
 	public void printTest()
 	{
-		assertEquals("Maricon", Printer.print(MSG));
+		assertEquals("Maricon", "FAIL");
 	}
 }
