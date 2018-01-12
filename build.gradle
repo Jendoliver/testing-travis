@@ -24,7 +24,7 @@ sourceSets {
 
 test {
 	filter {
-		includeTestsMatching "test.branch1tests.*"
+		includeTestsMatching "branch1tests.*"
 	}
 	testLogging {
 		events "passed", "skipped", "failed"
