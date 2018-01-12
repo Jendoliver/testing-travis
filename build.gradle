@@ -22,7 +22,7 @@ sourceSets {
 	}
 }
 
-testBranch1 {
+task testBranch1 {
 	filter {
 		includeTestsMatching "branch1tests.*"
 	}
@@ -32,7 +32,7 @@ testBranch1 {
 	}
 }
 
-testBranch2 {
+task testBranch2 {
 	filter {
 		includeTestsMatching "branch2tests.*"
 	}
