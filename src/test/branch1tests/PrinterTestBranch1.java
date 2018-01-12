@@ -8,7 +8,7 @@ public class PrinterTestBranch1
 	@Test
 	public void failedTest() throws Exception
 	{
-		assertEquals("Me puedes mostrar algun mensaje hijo de puta?", "TODOGUAY", "TODOGUAY");
+		assertEquals("Me puedes mostrar algun mensaje hijo de puta?", "CONCO", "TODOGUAY");
 	}
 	
 	@Test
