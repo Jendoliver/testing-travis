@@ -23,8 +23,8 @@ sourceSets {
 }
 
 task testBranch1 {
+	println 'esta NO toca'
 	test {
-		println 'esta NO toca'
 		filter {
 			includeTestsMatching "branch1tests.*"
 		}
@@ -36,8 +36,8 @@ task testBranch1 {
 }
 
 task testBranch2 {
+	println 'esta toca'
 	test {
-		println 'esta toca'
 		filter {
 			includeTestsMatching "branch2tests.*"
 		}
